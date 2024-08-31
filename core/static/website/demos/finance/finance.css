@@ -67,11 +67,21 @@ p {
     font-size: 18px;
     line-height: 32px;
 }
+
+
+.slidetitle {
+    font-size: 60px;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+
+
 .navbar .navbar-nav .simple-dropdown .dropdown-menu {
     border-radius: 5px;
 }
 /* subcribe style 02 */
-.newsletter-style-02 .btn {
+.newsletter-style-02 .btn {      
     padding: 10px 18px 9px 18px;
 }
 .newsletter-style-02 input {   

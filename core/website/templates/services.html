@@ -1,0 +1,168 @@
+{% load static %}
+{% include "header.html" %}
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor"> 
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+
+    <!-- start page title -->
+    <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url({% static 'images/services-bg.jpg' %})">
+        <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center position-relative page-title-extra-large">
+                    <div class="d-flex flex-column small-screen">
+                        <div class="mt-auto" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                            <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-2px">Finance Expertise</h1>
+                        </div>
+                        <!-- start breadcrumb -->
+                        <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 alt-font text-white">
+                            <ul data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                                <li><a href="" class="text-white">Home</a></li>
+                                <li>Expertise</li>
+                            </ul>
+                        </div>
+                        <!-- end breadcrumb -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <!-- start section --> 
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center text-lg-start" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                <div class="col-lg-6 md-mb-25px">
+                    <h1 class="alt-font fw-600 text-dark-gray mb-0 ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="700">Perfect <span class="text-highlight">solutions<span class="bg-base-color h-10px sm-h-8px bottom-20px md-bottom-17px opacity-5 separator-animation"></span></span> for your business.</h1>
+                </div>
+                <div class="col-lg-5 offset-lg-1 last-paragraph-no-margin">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 mt-7 justify-content-center" data-anime='{ "el": "childs", "translateX": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                <!-- start pie chart item -->
+                <div class="col md-mb-45px">
+                    <div class="chart-percent mb-20px">
+                        <span class="pie-chart-style-01 d-flex align-items-center justify-content-center" data-line-width="4" data-percent="90" data-track-color="#ffffff" data-start-color="#BC8947" data-end-color="#BC8947">
+                            <span class="percent d-flex align-items-center justify-content-center fs-22 fw-500 text-dark-gray bg-gradient-extra-midium-gray-transparent box-shadow-double-large w-100px h-100px rounded-circle"></span>
+                        </span>
+                    </div>
+                    <div class="chart-text text-center alt-font text-dark-gray fw-500 fs-22">Finance Issues</div>
+                </div>
+                <!-- end pie chart item -->
+                <!-- start pie chart item -->
+                <div class="col md-mb-45px">
+                    <div class="chart-percent mb-20px">
+                        <span class="pie-chart-style-01 d-flex align-items-center justify-content-center" data-line-width="4" data-percent="92" data-track-color="#ffffff" data-start-color="#BC8947" data-end-color="#BC8947">
+                            <span class="percent d-flex align-items-center justify-content-center fs-22 fw-500 text-dark-gray bg-gradient-extra-midium-gray-transparent box-shadow-double-large w-100px h-100px rounded-circle"></span>
+                        </span>
+                    </div>
+                    <div class="chart-text text-center alt-font text-dark-gray fw-500 fs-22">Cost Analysis</div>
+                </div>
+                <!-- end pie chart item -->
+                <!-- start pie chart item -->
+                <div class="col xs-mb-45px">
+                    <div class="chart-percent mb-20px">
+                        <span class="pie-chart-style-01 d-flex align-items-center justify-content-center" data-line-width="4" data-percent="94" data-track-color="#ffffff" data-start-color="#BC8947" data-end-color="#BC8947">
+                            <span class="percent d-flex align-items-center justify-content-center fs-22 fw-500 text-dark-gray bg-gradient-extra-midium-gray-transparent box-shadow-double-large w-100px h-100px rounded-circle"></span>
+                        </span>
+                    </div>
+                    <div class="chart-text text-center alt-font text-dark-gray fw-500 fs-22">Profit Calculation</div>
+                </div>
+                <!-- end pie chart item -->
+                <!-- start pie chart item -->
+                <div class="col">
+                    <div class="chart-percent mb-20px">
+                        <span class="pie-chart-style-01 d-flex align-items-center justify-content-center" data-line-width="4" data-percent="90" data-track-color="#ffffff" data-start-color="#BC8947" data-end-color="#BC8947">
+                            <span class="percent d-flex align-items-center justify-content-center fs-22 fw-500 text-dark-gray bg-gradient-extra-midium-gray-transparent box-shadow-double-large w-100px h-100px rounded-circle"></span>
+                        </span>
+                    </div>
+                    <div class="chart-text text-center alt-font text-dark-gray fw-500 fs-22">Growth Ratio</div>
+                </div>
+                <!-- end pie chart item -->
+            </div>
+        </div> 
+    </section>
+    <!-- end section -->  
+    <!-- start section -->
+    <section class="bg-very-light-gray">
+        <div class="container">
+            <div class="row justify-content-center mb-3 sm-mb-8">
+                <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px">Professional Services</span>
+                    <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px">Our Expertise</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 justify-content-center transition-inner-all" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                <!-- start interactive banner item -->
+                <div class="col interactive-banner-style-02 hover-box dark-hover md-mb-30px">
+                    <div class="text-center position-relative box-shadow-quadruple-large overflow-hidden">
+                        <figure class="m-0">
+                            <a href="">
+                                <img src="" alt="Finance Planning">
+                            </a>
+                            <figcaption class="w-100 position-absolute bottom-0px bg-white">
+                                <div class="position-relative z-index-2 p-40px pt-25px pb-15px border-bottom border-dark-opacity">
+                                    <i class="features-icon line-icon-Archery-2 d-block icon-extra-large text-light-opacity"></i>
+                                    <a href="" class="alt-font fw-500 d-inline-block mb-10px text-dark-gray fs-22">Finance Planning</a>
+                                    <p class="w-80 lg-w-100 mx-auto mb-15px lg-mb-10px text-light-opacity">Lorem ipsum is simply the dummy text of printing.</p>
+                                </div>
+                                <a href="" class="btn btn-link btn-hover-animation-switch btn-large text-base-color d-table d-lg-inline-block md-mx-auto p-20px z-index-1">
+                                    <span>
+                                        <span class="btn-text">More Reading</span>
+                                        <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                    </span> 
+                                </a>
+                                <div class="box-overlay bg-base-color"></div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- end interactive banner item -->
+
+                <!-- Repeat similar blocks for additional expertise -->
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mt-4" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'> 
+                    <h4 class="alt-font text-dark-gray fw-500 mt-25px mb-25px ls-minus-1px">Any question? <a href="{% url 'contact' %}" class="fw-600 text-decoration-line-bottom-medium text-dark-gray d-inline-block">We're ready to help!</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start partners/clients section -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px">Partners and Customers</span>
+                    <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px">Valuable Clients</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-4 row-cols-sm-2 clients-style-04" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                <!-- start client item -->
+                <div class="col text-center border-end border-bottom border-color-light-medium-gray xs-border-end-0 transition-inner-all p-5 sm-pt-12 sm-pb-12">
+                    <div class="client-box">
+                        <a href="#"><img src="{% static 'images/logo-pingdom-dark-gray.svg' %}" class="h-40px md-h-30px sm-h-40px" alt="Client 1"></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+
+                <!-- Repeat similar blocks for additional clients -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end partners/clients section -->
+
+{% include "footer.html" %}
+

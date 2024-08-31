@@ -639,6 +639,7 @@ b, strong {
 .text-seal-brown {
   color: var(--seal-brown);
 }
+
 .text-Wasabi {
   color: var(--Wasabi);
 }
@@ -712,6 +713,8 @@ b, strong {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);
 }
+
+
 /* Text stroke width */
 .text-outline-width-1px {
   -webkit-text-stroke-width: 1px;

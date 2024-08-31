@@ -1,0 +1,91 @@
+{% include "header.html" %}
+{% load static %}
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor"> 
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+
+    <!-- start page title -->
+    <section class="page-title-parallax-background bg-dark-gray half-section ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url({% static 'website/images/slide3.jpg' %})">
+        <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center position-relative page-title-extra-large">
+                    <div class="d-flex flex-column small-screen">
+                        <div class="mt-auto" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                            <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-1px">Our Experts</h1>
+                        </div>
+                        <!-- start breadcrumb -->
+                        <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 alt-font text-white">
+                            <ul data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                                <li><a href="" class="text-white">Home</a></li>
+                                <li>Team</li>
+                            </ul>
+                        </div>
+                        <!-- end breadcrumb -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <!-- start section --> 
+    <section class="bg-very-light-gray pb-0">
+        <div class="container">
+            <div class="row align-items-lg-end align-items-center flex-column-reverse flex-lg-row text-center text-lg-start overflow-hidden">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-11">
+                    <img class="w-100" src="{% static 'website/images/team-leader.jpg' %}" alt="Team Leader Image" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6 pb-8" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px mb-15px">Words of Team Leader</span>
+                    <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px shadow-none" data-shadow-animation="true" data-animation-delay="900">Teamwork Wins <span class="text-highlight">Championships.<span class="bg-base-color h-10px sm-h-8px bottom-20px md-bottom-17px opacity-5 separator-animation"></span></span></h1>
+                    <p class="w-90 xs-w-100 mx-auto mx-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <span class="fs-22 text-dark-gray d-block">@ <span class="fw-600">Matthew Taylor</span></span>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- end section -->   
+
+    <!-- start section -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center mb-3 md-mb-8">
+                <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px">Finance Consultants</span>
+                    <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px">Leadership Team</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [800,800], "scale": [1.1, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <!-- start team member item --> 
+                <div class="col text-center team-style-05 mb-40px sm-mb-35px">
+                    <div class="position-relative mb-25px last-paragraph-no-margin">
+                        <img src="{% static 'website/images/team-member-1.jpg' %}" alt="Team Member">
+                        <div class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-40px lg-p-30px team-content bg-gradient-light-brown-transparent">
+                            <p class="text-white lh-32 w-70 xl-w-80 md-w-65 xs-w-60 absolute-middle-center opacity-7">Lorem ipsum simply text printing typesetting.</p>
+                            <div class="social-icon">
+                                <a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://www.dribbble.com" target="_blank" class="text-white"><i class="fa-brands fa-dribbble"></i></a>
+                                <a href="https://www.twitter.com/" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                            </div>                                
+                        </div>
+                    </div>
+                    <div class="alt-font fw-500 text-dark-gray lh-28 fs-20">Jeremy Dupont</div>
+                    <span>Founder</span>
+                </div>
+                <!-- end team member item -->   
+
+                <!-- Additional team members here -->
+                <!-- Repeat the structure above for each team member -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+{% include "footer.html" %}

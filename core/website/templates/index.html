@@ -6,22 +6,22 @@
         <div class="swiper full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination swiper-pagination-style-3 magic-cursor drag-cursor" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
             <div class="swiper-wrapper">
                 <!-- start slider item -->
+                {% for slide in slides %}
                 <div class="swiper-slide">
-                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background" style="background-image:url({% static 'website/images/slide1.jpg' %});" data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1.1], "duration": 7000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'></div>
+                    <div class="position-absolute left-0px top-0px w-100 h-100 cover-background" style="background-image:url('{{ slide.image.url }}');" data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1.1], "duration": 7000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'></div>
                     <div class="opacity-light bg-gradient-black-dark-brown"></div>
                     <div class="container h-100">
                         <div class="row align-items-center h-100 justify-content-center">
                             <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
                                 <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
-                                    <span class="d-inline-block fw-400 text-white fs-22 mb-0">Insight Imagery</span>
-                                    <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
+                                    <span class="d-inline-block text-white slidetitle">{{ slide.title }}</span>
                                 </div>
-                                <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Capture Profits That Last"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'></div> 
-                                <a href="demo-finance-expertise.html" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>About Us</a>
+                               
                             </div>
                         </div> 
                     </div>
-                </div>
+                </div> 
+                {% endfor %}
             </div>
             <!-- start slider pagination -->
             <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets d-block d-sm-none"></div>
@@ -31,6 +31,7 @@
             <div class="slider-one-slide-next-1 icon-very-small text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutRight icon-extra-large"></i></div>
             <!-- end slider navigation -->
         </div>
+        
     </section>
     <!-- end banner slider -->  
     <!-- start section -->
@@ -51,11 +52,11 @@
                 <!-- end features box item -->
                 <!-- start features box item -->
                 <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
-                    <div class="feature-box bg-white h-100 justify-content-start p-17 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px">
-                        <div class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500">02</div>
+                    <div class="feature-box bg-red h-100 justify-content-start p-17 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px">
+                        <div class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-white border border-2 border-color-extra-medium-gray mb-25px fw-500">02</div>
                         <div class="feature-box-content">
-                            <span class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22">Collaborative</span>
-                            <p class="mb-15px">Together, we achieve more by valuing each team member's contribution.</p>
+                            <span class="d-inline-block alt-font text-white fw-500 mb-5px fs-22">Collaborative</span>
+                            <p class="mb-15px text-white">Together, we achieve more by valuing each team member's contribution.</p>
                         </div>
                         <div class="feature-box-overlay bg-white border-radius-6px"></div>
                     </div>  
@@ -129,89 +130,36 @@
                     <div class="outside-box-right-50 md-outside-box-right-70 sm-outside-box-right-0" data-anime='{ "translateX": [100, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>
                         <div class="swiper magic-cursor ps-30px pe-30px sm-ps-0 sm-pe-0" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 35, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination-1", "clickable": true, "dynamicBullets": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 2, "spaceBetween": 50 }, "768": { "slidesPerView": 2, "spaceBetween": 40 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
                             <div class="swiper-wrapper pt-30px pb-30px">
-                                <div class="swiper-slide">
-                                    <div class="row g-0 services-box-style-02"> 
-                                        <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                                            <div class="services-box-icon">
-                                                <i class="line-icon-Basket-Coins icon-extra-large text-base-color mb-25px"></i>
-                                            </div>
-                                            <div class="services-box-content">
-                                                <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">ICT Services</a>
-                                                <p class="sm-mb-15px">
-                                                    We offer a variety of ICT services, including networking, programming and system development.
-                                                </p>
-                                                <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                                            </div> 
-                                        </div> 
-                                        <div class="col-sm-6 services-box-img xs-h-300px">
-                                            <div class="h-100 cover-background" style="background-image: url({% static 'website/images/computer.jpg' %})"></div>
-                                        </div> 
-                                    </div>
-                                </div>
 
                                 <!-- start slider item --> 
-                                <div class="swiper-slide">
-                                    <div class="row g-0 services-box-style-02"> 
-                                        <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                                            <div class="services-box-icon">
-                                                <i class="line-icon-Basket-Coins icon-extra-large text-base-color mb-25px"></i>
-                                            </div>
-                                            <div class="services-box-content">
-                                                <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Photography Services</a>
-                                                <p class="sm-mb-15px">
-                                                    We offer a variety of photography services, including indoor and outdoor photography.
-                                                </p>
-                                                <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
+                                <div class="swiper-wrapper">
+                                    <!-- start slider item -->
+                                    {% for service in services %}
+                                    <div class="swiper-slide">
+                                        <div class="row g-0 services-box-style-02"> 
+                                            <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
+                                                <div class="services-box-icon">
+                                                    <!-- If your model has an icon field -->
+                                                    <i class="{{ service.icon_class }} icon-extra-large text-base-color mb-25px"></i>
+                                                </div>
+                                                <div class="services-box-content">
+                                                    <a href="{{ service.get_absolute_url }}" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">{{ service.title }}</a>
+                                                    <p class="sm-mb-15px">
+                                                        {{ service.description|truncatewords:20 }}
+                                                    </p>
+                                                    <a href="{{ service.get_absolute_url }}" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
+                                                </div> 
                                             </div> 
-                                        </div> 
-                                        <div class="col-sm-6 services-box-img xs-h-300px">
-                                            <div class="h-100 cover-background" style="background-image: url({% static 'website/images/slide1.jpg' %})"></div>
-                                        </div> 
+                                            <div class="col-sm-6 services-box-img xs-h-300px">
+                                                <div class="h-100 cover-background" style="background-image: url('{{ service.image.url }}')"></div>
+                                            </div> 
+                                        </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
+                                
                                 <!-- end slider item -->
 
-                                <!-- start slider item --> 
-                                <div class="swiper-slide">
-                                    <div class="row g-0 services-box-style-02"> 
-                                        <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                                            <div class="services-box-icon">
-                                                <i class="line-icon-Basket-Coins icon-extra-large text-base-color mb-25px"></i>
-                                            </div>
-                                            <div class="services-box-content">
-                                                <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Videography Services</a>
-                                                <p class="sm-mb-15px">
-                                                    We offer a variety of videography services, including event videography.
-                                                </p>
-                                                <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                                            </div> 
-                                        </div> 
-                                        <div class="col-sm-6 services-box-img xs-h-300px">
-                                            <div class="h-100 cover-background" style="background-image: url({% static 'website/images/slide3.jpg' %})"></div>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <!-- end slider item -->
-
-                                <div class="swiper-slide">
-                                    <div class="row g-0 services-box-style-02"> 
-                                        <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                                            <div class="services-box-icon">
-                                                <i class="line-icon-Basket-Coins icon-extra-large text-base-color mb-25px"></i>
-                                            </div>
-                                            <div class="services-box-content">
-                                                <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Security System Services</a>
-                                                <p class="sm-mb-15px">
-                                                    We offer a variety of security systems services, including CCTV camera installation.
-                                                </p>
-                                                <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                                            </div> 
-                                        </div> 
-                                        <div class="col-sm-6 services-box-img xs-h-300px">
-                                            <div class="h-100 cover-background" style="background-image: url({% static 'website/images/CCTV.jpg' %})"></div>
-                                        </div> 
-                                    </div>
-                                </div>
                             </div> 
                         </div>
                     </div>

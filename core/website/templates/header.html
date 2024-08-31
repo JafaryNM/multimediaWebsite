@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-lg bg-transparent disable-fixed"> 
             <div class="container-fluid"> 
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="demo-finance.html">
+                    <a href= {% url "home" %} class="navbar-brand" href="demo-finance.html">
                         <img src="{% static 'website/images/logo1.png' %}" data-at2x="{% static 'website/images/MORRISE LOGO-06.png' %}" alt="" class="default-logo">
                         <img src="{% static 'website/images/demo-finance-logo-white.png' %}" data-at2x="{% static 'website/images/demo-finance-logo-white@2x.png' %}" alt="" class="alt-logo">
                         <img src="{% static 'website/images/demo-finance-logo-black.png' %}" data-at2x="{% static 'website/images/demo-finance-logo-black@2x.png' %}" alt="" class="mobile-logo">
@@ -52,21 +52,13 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav alt-font"> 
-                            <li class="nav-item"><a href="demo-finance.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href={% url "home" %} class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="demo-finance-about.html" class="nav-link">About</a></li>
                             <li class="nav-item dropdown simple-dropdown">
                                 <a href="demo-finance-expertise.html" class="nav-link">Expertise</a>
                                 <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                    <li><a href="demo-finance-expertise-details.html">Finance planning</a></li>
-                                    <li><a href="demo-finance-expertise-details.html">Wealth management</a></li>
-                                    <li><a href="demo-finance-expertise-details.html">Strategic planning</a></li>
-                                    <li><a href="demo-finance-expertise-details.html">Audit assurance</a></li>
-                                </ul>
                             </li>
                             <li class="nav-item"><a href="demo-finance-team.html" class="nav-link">Team</a></li>
-                            <li class="nav-item"><a href="demo-finance-pricing.html" class="nav-link">Pricing</a></li>
-                            <li class="nav-item"><a href="demo-finance-news.html" class="nav-link">News</a></li>
                             <li class="nav-item"><a href="demo-finance-contact.html" class="nav-link">Contact</a></li>
                         </ul>
                     </div>

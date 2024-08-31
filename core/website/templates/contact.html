@@ -1,0 +1,105 @@
+{% include "header.html" %}
+{% load static %}
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor"> 
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+
+    <!-- start page title -->
+    <div class="page-layout">
+        <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url({% static 'website/images/slide3.jpg' %}); margin-top: 76.025px;">
+            <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center position-relative page-title-extra-large">
+                        <div class="d-flex flex-column small-screen">
+                            <div class="mt-auto appear" data-anime="{ &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-1px">Contact Us</h1>
+                            </div>
+                            <!-- start breadcrumb -->
+                            <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 alt-font text-white">
+                                <ul data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                    <li><a href="/" class="text-white">Home</a></li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                            <!-- end breadcrumb -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Single Tab Section -->
+        <section>
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="alt-font text-dark-gray fw-600">Our Location</h2>
+                        <div class="tab-content mt-4">
+                            <div class="tab-pane fade in active show" id="single_tab">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-5 col-md-6 sm-mb-30px">
+                                        <img src="{% static 'website/images/office.jpg' %}" alt="Location Image" class="w-100">
+                                    </div>
+                                    <div class="col-lg-4 col-md-5 offset-md-1 text-center text-md-start">
+                                        <span class="alt-font text-dark-gray fs-22 fw-500 mb-5px d-inline-block">Our Office</span> 
+                                        <p>123 Street Name, City, Country</p>
+                                        <span class="d-block"><span class="text-dark-gray fw-500">T: </span><a href="tel:+1234567890">+1 234 567 890</a></span>
+                                        <span class="d-block mb-20px"><span class="text-dark-gray fw-500">E: </span><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span>
+                                        <a href="https://maps.google.com" target="_blank" class="btn btn-link text-dark-gray thin btn-large">View on Google Maps</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="cover-background big-section" style="background-image: url({% static 'website/images/contact-background.jpg' %});" data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            <div class="opacity-extra-medium bg-dark-gray"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-10 contact-form-style-03 position-relative">
+                        <div class="p-14 md-p-10 bg-white border-radius-6px text-center box-shadow-extra-large">
+                            <div class="d-inline-block fw-500 text-uppercase text-base-color ls-1px mb-5px">Start Your New Project</div>
+                            <h2 class="fw-600 ls-minus-1px text-dark-gray mb-8">Looking for an Excellent Idea?</h2>
+                            <!-- start contact form -->
+                            <form action=" " method="post">
+                                {% csrf_token %}
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                    <input class="ps-0 border-radius-0px fs-18 border-color-extra-medium-gray form-control required" type="text" name="name" placeholder="Your name*">
+                                </div>
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                    <input class="ps-0 border-radius-0px fs-18 border-bottom border-color-extra-medium-gray form-control required" type="email" name="email" placeholder="Your email address*">
+                                </div>
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="bi bi-telephone"></i></span>
+                                    <input class="ps-0 border-radius-0px fs-18 border-bottom border-color-extra-medium-gray form-control" type="tel" name="phone" placeholder="Your phone">
+                                </div>
+                                <div class="position-relative form-group form-textarea mt-15px mb-0"> 
+                                    <textarea class="ps-0 border-radius-0px fs-18 border-bottom border-color-extra-medium-gray form-control" name="comment" placeholder="Your message" rows="4"></textarea>
+                                    <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                    <button class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge mt-30px submit w-100" type="submit">Send message</button>
+                                    <div class="form-results mt-20px d-none"></div>
+                                </div>
+                            </form>
+                            <!-- end contact form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end page layout -->
+</body>
+
+{% include "footer.html" %}
